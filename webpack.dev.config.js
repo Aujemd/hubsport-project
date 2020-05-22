@@ -32,7 +32,7 @@ module.exports = {
                     options:{
                         outputPath: 'assets/',
                     }
-                } 
+                }
             },
             {
                 test: /\.css$/,

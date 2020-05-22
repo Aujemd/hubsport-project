@@ -1,12 +1,12 @@
 {
-  "name": "ceramica-project",
+  "name": "hubspot-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config ./webpack.dev.config.js",
-    "dll": "webpack --config ./webpack.dll.config.js --mode production",
+    "prebuild": "webpack --config ./webpack.dll.config.js --mode production",
     "build": "webpack --config ./webpack.config.js --mode production"
   },
   "keywords": [],
@@ -36,6 +36,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "reactstrap": "^8.4.1"

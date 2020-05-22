@@ -1,2 +1,2 @@
 npm i @babel/core @babel/plugin-proposal-class-properties @babel/plugin-syntax-dynamic-import @babel/plugin-transform-runtime @babel/preset-env @babel/preset-react add-asset-html-webpack-plugin babel-loader clean-webpack-plugin css-loader file-loader html-webpack-plugin mini-css-extract-plugin optimize-css-assets-webpack-plugin sass-loader style-loader terser-webpack-plugin url-loader webpack webpack-cli webpack-dev-server -D
-npm i react react-dom reactstrap -S
+npm i react react-dom reactstrap bootstrap -S
