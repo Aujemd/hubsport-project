@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].js',
-        publicPath: 'http://localhost:9000/',
+        publicPath: 'https://hubspot-project.now.sh/',
         chunkFilename: 'js/[id].[chunkhash].js'
     },
     devServer:{
