@@ -58,12 +58,12 @@ export const DashboardContent = () => {
         if (activeTab !== tab) setActiveTab(tab);
     }
 
-    const slides = items.map((item) => {
+    const slides = items.map((item, index) => {
         return (
             <CarouselItem
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
-                key={item.src}
+                key={index}
             >
                 <img src={item.src} alt={item.altText} />
                 <CarouselCaption captionText={item.caption} captionHeader={item.caption} />

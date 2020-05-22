@@ -3,15 +3,16 @@ import {
     Card, CardBody, Form,
     TabContent, TabPane, Nav,
     NavItem, NavLink, Button,
-    CardTitle, CardText, Row, Col} from 'reactstrap';
+    CardTitle, CardText, Row, Col
+} from 'reactstrap';
 
 export const SidebarLeft = () => {
     return (
         <div className='col'>
-            <Card>
+            <Card className="vh-100">
                 <CardBody>
-                    <h4>Busqueda</h4>
-                    <Form>
+                    <Form className="h-auto">
+                        <h4>Busqueda</h4>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" aria-describedby="button-addon2" />
                             <div class="input-group-append">
@@ -19,7 +20,29 @@ export const SidebarLeft = () => {
                             </div>
                         </div>
                     </Form>
-                </CardBody>
+                        <div className="sidebarLeft-list">
+                            <Card body>
+                                <CardTitle>Special Title Treatment</CardTitle>
+                                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                <Button>Go somewhere</Button>
+                            </Card>
+                            <Card body>
+                                <CardTitle>Special Title Treatment</CardTitle>
+                                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                <Button>Go somewhere</Button>
+                            </Card>
+                            <Card body>
+                                <CardTitle>Special Title Treatment</CardTitle>
+                                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                <Button>Go somewhere</Button>
+                            </Card>
+                            <Card body>
+                                <CardTitle>Special Title Treatment</CardTitle>
+                                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                                <Button>Go somewhere</Button>
+                            </Card>
+                        </div>
+                        </CardBody>
             </Card>
         </div>)
 }
