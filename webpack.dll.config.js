@@ -3,13 +3,12 @@ const webpack = require('webpack')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
- 
 module.exports = {
     entry: {
-     modules:[
-         'react',
-         'react-dom',
-     ]
+    modules:[
+        'react',
+        'react-dom',
+    ]
     },
     optimization:{
         minimizer:[
@@ -24,7 +23,7 @@ module.exports = {
     },
     plugins:[
         new webpack.DllPlugin({
-            name: '[name]', 
+            name: '[name]',
             path: path.join(__dirname, '[name]-manifest.json')
         })
     ],

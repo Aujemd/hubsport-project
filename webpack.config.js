@@ -2,8 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack')
-const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin'); 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin') 
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
@@ -39,7 +39,7 @@ module.exports = {
                         name: '[hash].[ext]',
                         outputPath: 'assets'
                     }
-                } 
+                }
             },
             {
                 test: /\.css$/,
@@ -72,9 +72,9 @@ module.exports = {
             manifest: require('./modules-manifest.json')
         }),
         new AddAssetHtmlPlugin({
-          filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
-          outputPath: 'js',
-          publicPath: 'http://localhost:3001/js'
+            filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
+            outputPath: 'js',
+            publicPath: 'http://localhost:3001/js'
         }),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: ['**/app.*'],
